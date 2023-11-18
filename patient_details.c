@@ -22,8 +22,15 @@ int main()
 		printf("CONTACTS :");
 		scanf("%d", &contact);
 		insertPatient(&patientlist, patientID, name, gender, contact);
-	}
+	}break;
 	/*display the list after inputs*/
-	displayPatient(patientlist);
+	if (i = 0; i < insertpatient; i++)
+	{
+		displayPatient(patientlist);
+	}
+	else
+	{
+		printf("No List");
+	}
 	return (0);
 }
