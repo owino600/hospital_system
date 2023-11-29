@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 class PatientSystem:
     def __init__(self, db_file='hospital_system.db'):
         self.conn = sqlite3.connect(db_file)

@@ -19,5 +19,9 @@ void insertPatient(Patient** head, int patientID, const char* name, const char* 
 void deletePatient(Patient** head, int patientID);
 void displayPatient(Patient* head);
 void freePatient(Patient** head);
+void username(char *firstname, char *lastname);
+void genderchoice(char* gender);
+void askcontact(int *phone, char *email);
+void birthdate(char *day, char *month, char *year);
 
 #endif  /*MAIN_H*/

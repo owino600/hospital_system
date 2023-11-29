@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 class node:
     def __init__(self, data=None):
         self.data = data

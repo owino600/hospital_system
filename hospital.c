@@ -27,7 +27,7 @@ void insertPatient(Patient** head, int patientID, const char* name, const char* 
 	if (*head == NULL)
 	{
 		*head = newPatient;
-	}break;
+	}
 	else
 	{
 		Patient* temp = *head;

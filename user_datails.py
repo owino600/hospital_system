@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """dictionary for store user credentials (username and password)"""
 class usercredentials:
      # Function to validate user credentials
