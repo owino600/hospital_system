@@ -6,6 +6,16 @@ class Hospital:
         doctor = input("")
         nurse = input("")
         patient = input("")
+        category = Hospital(doctor, nurse, patient)
+        if input in Hospital == doctor:
+            print("welcome doctor!")
+            continue
+        elif input in Hospital == nurse:
+            print("welcome nurse!")
+            continue
+        else:
+            print("welcome patient!")
+            continue
         class User_credentials:
             def __init__(self, username, email, password):
                 self.username=username
