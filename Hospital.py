@@ -15,16 +15,22 @@ class Hospital:
                 email = input("ENTER EMAIL ADDRESS: ")
                 password = input("ENTER PASSWORD: ")
                 user = user_credentials(username, email, password)
-                if email in user_credentials:
-                    print('account exist')
+                if email in user_credentials == password:
+                    print('account exist, logged in successfully!')
                 else:
-                    user_credentials[email] = password
+                    user_credentials[email, username] = password
                     while true:
                         print("welcome to your system")
-                        print("")
-                        print("")
+                        print("1.")
+                        print("2.")
                         choice = input("Enter choice")
                         if choice == "1":
+                            username = input("ENTER USERNAME: ")
+                            email = input("ENTER EMAIL ADDRESS: ")
+                            password = input("ENTER PASSWORD: ")
                             if login(username, email, password):
                                 print("Login successful!")
                             break
+                        else:
+                            print("acount unavailable, please sign up!")
+                            user_credentials[email, username] = password
