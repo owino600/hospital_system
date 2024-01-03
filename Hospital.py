@@ -44,3 +44,19 @@ class Hospital:
                         else:
                             print("acount unavailable, please sign up!")
                             user_credentials[email, username] = password
+
+                            class Doctor:
+                                def __init__(self, prescribe, admit, release):
+                                    self.prescribe = prescribe
+                                    self.admit = admit
+                                    self.release = release
+                                    patient = Doctor(prescribe, admit, release)
+                                    if patient == prescribed:
+                                        print('Please prescribe the required drugs')
+                                        prescribe = input("")
+                                    elif patient == admit:
+                                        print('Enter reson to admit')
+                                        admit = input("")
+
+
+
