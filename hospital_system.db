@@ -1,4 +1,4 @@
-mport sqlite3
+import sqlite3
 
 # Establish a connection to the SQLite database
 conn = sqlite3.connect('hospital_system.db')
