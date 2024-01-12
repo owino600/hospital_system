@@ -1,18 +1,19 @@
 class Hospital:
     def __init__(self, doctor, nurse, patient):
-        self.doctors=doctor
-        self.nurses=nurse
-        self.patients=patient
-        if input in Hospital == doctor:
+        self.Doctor=doctor
+        self.Nurse=nurse
+        self.Patient=patient
+        category = input("")
+        category = Hospital(doctor, nurse, patient)
+        if input in Hospital == Doctor:
             print("welcome doctor!")
-            continue
-        elif input in Hospital == nurse:
+        elif input in Hospital == Nurse:
             print("welcome nurse!")
-            continue
+            #continue
         else:
             print("welcome patient!")
-            continue
-        category = Hospital(doctor, nurse, patient)
+            #continue
+        
         class User_credentials:
             def __init__(self, username, email, password):
                 self.username=username
