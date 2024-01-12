@@ -52,7 +52,3 @@ class Hospital:
                                     elif patient == admit:
                                         print('Enter reson to admit')
                                         admit = input("")
-        
-
-
-
