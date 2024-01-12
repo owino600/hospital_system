@@ -3,11 +3,11 @@ class Hospital:
         self.Doctor=doctor
         self.Nurse=nurse
         self.Patient=patient
-        category = input("")
+        category = input("Enter your position (Doctor/Nurse/Patient): ")
         category = Hospital(doctor, nurse, patient)
-        if input in Hospital == Doctor:
+        if category in Hospital == Doctor:
             print("welcome doctor!")
-        elif input in Hospital == Nurse:
+        elif category in Hospital == Nurse:
             print("welcome nurse!")
             #continue
         else:
@@ -51,6 +51,7 @@ class Hospital:
                                         prescribe = input("")
                                     elif patient == admit:
                                         print('Enter reson to admit')
+                                        admit = input("")
         
 
 
