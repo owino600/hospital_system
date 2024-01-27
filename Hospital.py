@@ -25,7 +25,7 @@ class User_credentials:
             print('account exist, logged in successfully!')
         else:
             User_credentials.user_credentials[email, username] = password
-            while true:
+            while True:
                 print("welcome to your system")
                 print("1.")
                 print("2.")
