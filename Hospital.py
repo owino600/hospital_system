@@ -4,9 +4,9 @@ class Hospital:
         self.Nurse=nurse
         self.Patient=patient
         category = input("Enter your position (Doctor/Nurse/Patient): ")
-        if category == Doctor:
+        if category == "Doctor":
             print("welcome doctor!")
-        elif category == Nurse:
+        elif category == "Nurse":
             print("welcome nurse!")
             #continue
         else:
@@ -14,15 +14,17 @@ class Hospital:
             #continue
         
 class User_credentials:
+    user_credentials = {}
+    
     def __init__(self, username, email, password):
         self.username=username
         self.email=email
         self.password=password
         
-        if email in user_credentials == password:
+        if User_credentials.user_credentials[email, username] == password:
             print('account exist, logged in successfully!')
         else:
-            user_credentials[email, username] = password
+            User_credentials.user_credentials[email, username] = password
             while true:
                 print("welcome to your system")
                 print("1.")
@@ -33,11 +35,11 @@ class User_credentials:
             username = input("ENTER USERNAME: ")
             email = input("ENTER EMAIL ADDRESS: ")
             password = input("ENTER PASSWORD: ")
-        if login(username, email, password):
+        if self.login(username, email, password):
             print("Login successful!")
         else:
             print("acount unavailable, please sign up!")
-            user_credentials[email, username] = password
+            User_credentials.user_credentials[email, username] = password
 
 class Doctor:
     def __init__(self, prescribe, admit, discharge):
@@ -46,11 +48,11 @@ class Doctor:
         self.release = release
         
         patient = input("prescribe, admit, discharge")
-        if patient == prescribe:
+        if patient == "prescribe":
             print('Please prescribe the required drugs')
             prescribe = input("")
-        elif patient == admit:
+        elif patient == "admit":
             print('Enter reason to admit')
             admit = input("")
-        elif patient == discharge:
+        elif patient == "discharge":
             print('Patient Discharged please send to the accounts')
