@@ -1,5 +1,5 @@
 #include "hospital.h"
-void username(char *firstname, char *lastname)
+void username (char* firstname, char* lastname)
 {
 	printf("\033[1mFirst Name: \033[0m");
 	fgets(firstname, sizeof(firstname), stdin);

@@ -4,10 +4,9 @@ class Hospital:
         self.Nurse=nurse
         self.Patient=patient
         category = input("Enter your position (Doctor/Nurse/Patient): ")
-        category = Hospital(doctor, nurse, patient)
-        if category in Hospital == Doctor:
+        if category == Doctor:
             print("welcome doctor!")
-        elif category in Hospital == Nurse:
+        elif category == Nurse:
             print("welcome nurse!")
             #continue
         else:
@@ -19,7 +18,7 @@ class User_credentials:
         self.username=username
         self.email=email
         self.password=password
-        user = user_credentials(username, email, password)
+        
         if email in user_credentials == password:
             print('account exist, logged in successfully!')
         else:
@@ -29,26 +28,29 @@ class User_credentials:
                 print("1.")
                 print("2.")
                 choice = input("Enter choice")
+                break
         if choice == "1":
             username = input("ENTER USERNAME: ")
             email = input("ENTER EMAIL ADDRESS: ")
             password = input("ENTER PASSWORD: ")
         if login(username, email, password):
             print("Login successful!")
-            break
         else:
             print("acount unavailable, please sign up!")
             user_credentials[email, username] = password
 
 class Doctor:
-    def __init__(self, prescribe, admit, release):
+    def __init__(self, prescribe, admit, discharge):
         self.prescribe = prescribe
         self.admit = admit
         self.release = release
-        patient = Doctor(prescribe, admit, release)
-        if patient == prescribed:
+        
+        patient = input("prescribe, admit, discharge")
+        if patient == prescribe:
             print('Please prescribe the required drugs')
             prescribe = input("")
         elif patient == admit:
-            print('Enter reson to admit')
+            print('Enter reason to admit')
             admit = input("")
+        elif patient == discharge:
+            print('Patient Discharged please send to the accounts')
